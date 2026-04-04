@@ -1,0 +1,9 @@
+# compute height of ball in vertical motion
+# Patrick Shirlow, Jan 28th 2026
+v0 = 5 # initial velocity (m/s)
+g = 9.81 # acceleration due to gravity (m/s^2)
+t = 0.6 # time (s)
+
+y = v0*t - 0.5*g*t** 2 # vertical position (m)
+
+print(y)
