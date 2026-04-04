@@ -1,4 +1,7 @@
 # a)
+from fontTools.misc.arrayTools import pointInRect
+
+
 def set_temperature(value):
     try:
         temperature = int(value)
@@ -13,4 +16,14 @@ def set_temperature(value):
 print(set_temperature(10))
 print(set_temperature(100))
 
+# b)
+def get_temperature():
+    while True:
+        try:
+            s = input("Enter temperature in degrees Celsius: ")
+            value = int(s)
+            return set_temperature(value)
+        except ValueError as e:
+            print(e)
 
+print(get_temperature())
